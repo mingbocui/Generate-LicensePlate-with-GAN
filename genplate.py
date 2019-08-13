@@ -107,24 +107,15 @@ class GenPlate:
             os.mkdir(outputPath)
         for i in range(batchSize):
             plateStr = G.genPlateString(-1,-1)
-            #print(plateStr)
+
             img =  G.generate(plateStr);
-            #print(img)
-            # img = cv2.resize(img,size);
+
             filename = os.path.join(outputPath, str(i).zfill(4) + '-' + plateStr + ".jpg")
             cv2.imwrite(filename, img);
 
-G = GenPlate("./font/platech.ttf",'./font/platechar.ttf',"./NoPlates")
+if __name__ == '__main__':
 
-G.genBatch(3,2,range(31,65),"./plate_test",(272,72))
+    G = GenPlate("./font/platech.ttf",'./font/platechar.ttf',"./NoPlates")
 
+    G.genBatch(100,2,range(31,65),"./plate_test",(272,72))
 
-
-
-
-
-
-#
-#
-# cv2.imshow("a",com)
-# cv2.waitKey(0);
