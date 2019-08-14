@@ -117,5 +117,5 @@ if __name__ == '__main__':
 
     G = GenPlate("./font/platech.ttf",'./font/platechar.ttf',"./NoPlates")
 
-    G.genBatch(100,2,range(31,65),"./plate_test",(272,72))
+    G.genBatch(10,2,range(31,65),"./GeneratedPlateSamples",(272,72))
 
