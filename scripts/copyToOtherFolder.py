@@ -40,13 +40,13 @@ def objFileName(rootPath):
     val_image = images_name[math.floor(ratioTrain*numImg) : math.floor(ratioTrain*numImg)+math.floor(ratioVal * numImg)]
     test_image = images_name[-math.floor(ratioTest * numImg):]
 
-    trainFile = open("/home/westwell/car_plate_dataset/train.txt", 'w')
-    testFile = open("/home/westwell/car_plate_dataset/test.txt", 'w')
-    valFile = open("/home/westwell/car_plate_dataset/val.txt", 'w')
-
-    write(train_image, trainFile)
-    write(test_image, testFile)
-    write(val_image, valFile)
+    # trainFile = open("/home/westwell/car_plate_dataset/train.txt", 'w')
+    # testFile = open("/home/westwell/car_plate_dataset/test.txt", 'w')
+    # valFile = open("/home/westwell/car_plate_dataset/val.txt", 'w')
+    #
+    # write(train_image, trainFile)
+    # write(test_image, testFile)
+    # write(val_image, valFile)
 
     return train_image, val_image, test_image
 
