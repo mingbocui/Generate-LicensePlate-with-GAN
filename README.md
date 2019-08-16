@@ -22,8 +22,8 @@ Generate-LicensePlate-with-GAN
 
 This project uses [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model, I have already integrated them into this repository so you do not need to clone the original model.
 
-```sh
-$ npm install --global standard-readme-spec
+```python
+python3 import test.py
 ```
 
 ## Pipeline
@@ -40,10 +40,7 @@ step 2: run extractOutline.py to extact the outlines of these generated images.
 
 ## Usage
 
-This is only a documentation package. You can print out [spec.md](spec.md) to your console:
-
 ```sh
-$ standard-readme-spec
-# Prints out the standard-readme spec
+
 ```
 
