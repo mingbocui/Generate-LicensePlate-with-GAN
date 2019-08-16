@@ -1,5 +1,4 @@
-
-Generate-LicensePlate-with-GAN
+# Generate-LicensePlate-with-GAN
 
 [![Generate-LicensePlate-with-GAN compliant](https://img.shields.io/badge/FakePlate-v1.0-blue.svg)](https://github.com/mingbocui/Generate-LicensePlate-with-GAN)
 ![](https://img.shields.io/badge/frame-pytorch-orange.svg)
