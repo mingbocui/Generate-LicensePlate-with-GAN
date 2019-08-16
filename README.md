@@ -35,7 +35,10 @@ Standard Readme is designed for open source libraries. Although it’s [historic
 
 ## Background
 
-License plate detection is a general task for most autonomous driving comopany. To train a license plate detector with better performance, we had to feed as many pictures into the model as possible. However, given the huge efforts and privacy concerns of collecting real license plates. Given that, 
+License plate detection is a general task for most autonomous driving comopany. To train a license plate detector with better performance, we had to feed as many pictures into the model as possible. However, collecting real license plates will cost resource and may infridge on strangers' privacy. One solution is that we could generate license plate with simple python script, just like what we provide in 'genPlate.py'(Easy work, just random combinations of Characters and Digits). One following problem is that the generated plates are all of high quality. Training model with high quality images may cause your model degrade in the real world scene. Of course thta you could add Gaussian noise and make some transformations on these images to lower the resolution of images delibrately. But, we could not guarantee that the generated images will have the same distribution with real world images. Here 'GAN' comes to the rescue.
+
+
+Given the huge efforts and privacy concerns of collecting real license plates. Given that, 
 
 Standard Readme started with the issue originally posed by [@maxogden](https://github.com/maxogden) over at [feross/standard](https://github.com/feross/standard) in [this issue](https://github.com/feross/standard/issues/141), about whether or not a tool to standardize readmes would be useful. A lot of that discussion ended up in [zcei's standard-readme](https://github.com/zcei/standard-readme/issues/1) repository. While working on maintaining the [IPFS](https://github.com/ipfs) repositories, I needed a way to standardize Readmes across that organization. This specification started as a result of that.
 
