@@ -9,10 +9,8 @@ step 2: run extractOutline.py to extact the outlines of these generated images.
 
 # Generate-LicensePlate-with-GAN
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
 [![Generate-LicensePlate-with-GAN compliant](https://img.shields.io/badge/FakePlate-1.0-blue.svg)](https://github.com/mingbocui/Generate-LicensePlate-with-GAN)
-![](https://img.shields.io/badge/language-swift-orange.svg)
+![](https://img.shields.io/badge/frame-pytorch-orange.svg)
 
 > Standard Readme Style
 
