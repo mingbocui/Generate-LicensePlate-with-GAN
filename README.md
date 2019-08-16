@@ -1,4 +1,3 @@
-# Generate-LicensePlate-with-GAN
 
 Please run genplate.py to get perfect license plate, then extract the outlines to feed into the GAN model. The GAN model deployed here is pix2pix.
 
@@ -8,7 +7,7 @@ step 2: run extractOutline.py to extact the outlines of these generated images.
 
 
 
-# Standard Readme
+# Generate-LicensePlate-with-GAN
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
