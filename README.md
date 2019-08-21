@@ -23,8 +23,7 @@
   python3 extractOutline.py
   ```
   after running the above line you could get two dataset, the outline of the license plate(folder A) and the original image of the    plate(folder B), it is not ended, you have to combine the outline and original image into ONE SINGLE image. To do that, you should run the following lines:
-  
-   ```python
+  ```bash
   python3 pix2pixModel/datasets/combine_A_and_B.py --fola_A /path/to/your/outline --fola_B /path/to/your/original_image --fold_AB /path/to/store/combined/image
   ```
 
