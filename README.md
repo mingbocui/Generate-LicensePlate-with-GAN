@@ -36,6 +36,8 @@
 
 <p align="center">
   <img src="GeneratedPlateSamples/0001-贵YE6JFV.jpg"/>
+  <img src="GeneratedPlateSamples/0006-京D50UJ9.jpg"/>
+  <img src="GeneratedPlateSamples/0009-琼K7XAJ7.jpg"/>
 </p>
 
 
