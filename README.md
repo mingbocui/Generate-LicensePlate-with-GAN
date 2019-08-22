@@ -8,8 +8,8 @@
 # Table of Contents
 
 - [Background](#background)
-- [Pipeline](#train from scratch)
-- [Install](#how to use it?)
+- [Train from scratch](#train from scratch)
+- [How to use it?](#how to use it?)
 - [Usage](#usage)
 
 ## Background
