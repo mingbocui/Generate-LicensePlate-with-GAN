@@ -1,0 +1,1 @@
+some generated samples to show the high quality of artificial car-plate by just using python script

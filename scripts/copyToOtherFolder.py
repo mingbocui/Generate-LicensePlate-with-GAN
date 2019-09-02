@@ -8,6 +8,7 @@ import os
 import glob
 import random
 import math
+import argparse
 
 def write(imgs_list, fileObject):
     for img_name in imgs_list:
@@ -70,5 +71,13 @@ def copy_img(rootPath):
 
 
 if __name__ == '__main__':
-    rootPath = "/home/westwell/car_plate_dataset"
-    copy_img(rootPath)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--path', default=None, help='rootPath')
+    args = parser.parse_args()
+
+    if args.path is not None:
+        copy_img(args.path)
+    else:
+        rootPath = "/home/westwell/car_plate_dataset"
+        copy_img(rootPath)

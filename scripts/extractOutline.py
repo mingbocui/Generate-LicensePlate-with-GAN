@@ -3,19 +3,28 @@ import os
 import glob
 import cv2
 
-data_path = "/home/westwell/car_plate_dataset/B/old"
-path = os.path.join(data_path, '*')
-images_path = glob.glob(path)
-#print(images_path[:10])
-#images_path = images_path[:10]
-write_path = "/home/westwell/car_plate_dataset/A/old"
+import argparse
 
-images_path = sorted(images_path)
+def extract(data_path, write_path):
 
-for image_path in images_path:
-    image_name = image_path.split("/")[-1]
+    path = os.path.join(data_path, '*')
+    images_path = glob.glob(path)
 
-    #print(image_name)
-    image = cv2.imread(image_path,0)
-    final_path = os.path.join(write_path,image_name)
-    cv2.imwrite(final_path, cv2.Canny(image, 120, 120))
+    images_path = sorted(images_path)
+
+    for image_path in images_path:
+        image_name = image_path.split("/")[-1]
+
+        #print(image_name)
+        image = cv2.imread(image_path,0)
+        final_path = os.path.join(write_path,image_name)
+        cv2.imwrite(final_path, cv2.Canny(image, 120, 120))
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--A_path', default=None, help='path where you wan to store the outline image')
+    parser.add_argument('--B_path', default=None, help='path of the original image')
+    args = parser.parse_args()
+
+    extract(args.B_path, args.A_path)

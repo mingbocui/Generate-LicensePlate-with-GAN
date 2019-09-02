@@ -3,7 +3,7 @@
 [![Generate-LicensePlate-with-GAN compliant](https://img.shields.io/badge/FakePlate-v1.0-blue.svg)](https://github.com/mingbocui/Generate-LicensePlate-with-GAN)
 ![](https://img.shields.io/badge/frame-pytorch-orange.svg)
 
-> the goal: generate more realistic license plate images
+
 
 # Table of Contents
 
@@ -19,7 +19,7 @@
 - Prepare real-world licence plate dataset and put them in path ./data/B, since we gonna use pix2pix model and we need to extract the outlines of your plate images, the scripts are provided in `./scripts/extractOutline.py` (Later I will add some explicit argument to configure the paths, now you need enter into the .py file and modify it directly in the code)
 
   ```bash
-  python3 extractOutline.py
+  python3 extractOutline.py --A_path path/where/you/want/to/store/outlines --B_path path/stored/original/car-plate/images
   ```
   after running the above line you could get two dataset, the outline of the license plate(folder A) and the original image of the    plate(folder B), it is not ended, you have to combine the outline and original image into ONE SINGLE image. To do that, you should run the following lines:
   

@@ -8,6 +8,8 @@ import numpy as np;
 import os;
 from math import *
 
+import argparse
+
 
 # font = ImageFont.truetype("Arial-Bold.ttf",14)
 
@@ -51,17 +53,13 @@ def r(val):
 class GenPlate:
 
 
-    def __init__(self,fontCh,fontEng,NoPlates):
+    def __init__(self,fontCh,fontEng):
+
         self.fontC =  ImageFont.truetype(fontCh,43,0);
         self.fontE =  ImageFont.truetype(fontEng,60,0);
         self.img=np.array(Image.new("RGB", (226,70),(255,255,255)))
-        self.bg  = cv2.resize(cv2.imread("./images/template.bmp"),(226,70));
-        self.smu = cv2.imread("./images/smu2.jpg");
-        self.noplates_path = [];
-        for parent,parent_folder,filenames in os.walk(NoPlates):
-            for filename in filenames:
-                path = parent+"/"+filename;
-                self.noplates_path.append(path);
+        self.bg  = cv2.resize(cv2.imread("../images/template.bmp"),(226,70));
+        self.smu = cv2.imread("../images/smu2.jpg");
 
 
     def draw(self,val):
@@ -77,10 +75,8 @@ class GenPlate:
     def generate(self,text):
 
             fg = self.draw(text);
-
             fg = cv2.bitwise_not(fg);
             com = cv2.bitwise_or(fg,self.bg);
-
 
             return com
 
@@ -115,7 +111,8 @@ class GenPlate:
 
 if __name__ == '__main__':
 
-    G = GenPlate("./font/platech.ttf",'./font/platechar.ttf',"./NoPlates")
 
-    G.genBatch(10,2,range(31,65),"./GeneratedPlateSamples",(272,72))
+    G = GenPlate("../font/platech.ttf",'../font/platechar.ttf')
+
+    G.genBatch(10,2,range(31,65),"../GeneratedPlateSamples",(272,72))
 
