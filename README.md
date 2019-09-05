@@ -29,6 +29,14 @@
   python3 pix2pixModel/datasets/combine_A_and_B.py --fola_A /path/to/your/outline --fola_B /path/to/your/original_image --fold_AB /path/to/store/combined/image
   ```
   
+<p align="center">
+  <img src="ImagesGeneratedByGAN/samplesCombined/00241.jpg"/>
+  <img src="ImagesGeneratedByGAN/samplesCombined/00242.jpg"/>
+  <img src="ImagesGeneratedByGAN/samplesCombined/00247.jpg"/>
+</p>
+<p align="center">Original artificial car-plate image</p>
+  
+  
   After training, you will get a model which could generate realistic licence plates from the outline of scratch. So now you have to prepare the outline of your artificial licence plates:
   
   generate artificial licence plates: 
