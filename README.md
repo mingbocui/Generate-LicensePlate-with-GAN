@@ -10,6 +10,7 @@
 - [Background](#background)
 - [Training](#training)
 - [Usage](#usage)
+- [Problem](#problem)
 
 ## Background
 
@@ -66,4 +67,7 @@ Please run genplate.py to get perfect license plate, then extract the outlines t
 step 1: run genplate.py to generate perfect license plate images. 
 
 step 2: run extractOutline.py to extact the outlines of these generated images.
+
+## Problem
+The generated images are very blur, but this is because the original training set is very blur and noisy. And the distribution of the generated dataset is also similar to the real dataset. To improve the quality of images, maybe we need a more clean dataset.
 
