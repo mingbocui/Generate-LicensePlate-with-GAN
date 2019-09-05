@@ -57,7 +57,9 @@ After training with enough epochs, you will get a model which could generate rea
  Now we have a model which could transfer outline to realistic data, so what we need to do is to prepare the outlines, which could be divided into 2 steps: 
  
   **step 1**: run genplate.py to generate perfect license plate images. 
-  > python3 scripts/genPlate.py  
+    ```bash
+    python3 scripts/genPlate.py
+    ```
  
   <p align="center">
     <img src="GeneratedPlateSamples/0001-贵YE6JFV.jpg"/>
