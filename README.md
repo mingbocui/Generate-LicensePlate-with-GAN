@@ -30,12 +30,10 @@
   ```
   
 <p align="center">
-  <img src="ImagesGeneratedByGAN/samplesCombined/00241.jpg"/>
   <img src="ImagesGeneratedByGAN/samplesCombined/00242.jpg"/>
-  <img src="ImagesGeneratedByGAN/samplesCombined/00247.jpg"/>
 </p>
-<p align="center">Original artificial car-plate image</p>
-  
+<p align="center">after combination, the training set image will lokk like this</p>
+From the image shown above, we could find that the dataset is filled with many blur and noisy images... I hope you have more better equipments to collect the realword dataset.
   
   After training, you will get a model which could generate realistic licence plates from the outline of scratch. So now you have to prepare the outline of your artificial licence plates:
   
