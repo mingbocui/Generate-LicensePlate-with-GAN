@@ -21,13 +21,6 @@ def write(imgs_list, fileObject):
 
 def objFileName(rootPath):
 
-    # data_path = "/home/westwell/car_plate_dataset/B"
-    # path = os.path.join(data_path, '*')
-    # images_path = glob.glob(path)
-    # images_path = sorted(images_path
-    #
-    # images_name = images_path.split("/")[-1]
-
     images_name = os.listdir(rootPath+'/old/')
 
     numImg = len(images_name)
@@ -41,13 +34,6 @@ def objFileName(rootPath):
     val_image = images_name[math.floor(ratioTrain*numImg) : math.floor(ratioTrain*numImg)+math.floor(ratioVal * numImg)]
     test_image = images_name[-math.floor(ratioTest * numImg):]
 
-    # trainFile = open("/home/westwell/car_plate_dataset/train.txt", 'w')
-    # testFile = open("/home/westwell/car_plate_dataset/test.txt", 'w')
-    # valFile = open("/home/westwell/car_plate_dataset/val.txt", 'w')
-    #
-    # write(train_image, trainFile)
-    # write(test_image, testFile)
-    # write(val_image, valFile)
 
     return train_image, val_image, test_image
 
@@ -57,7 +43,7 @@ def copy(list, sourcePath, destinationPath):
 
 
 def copy_img(rootPath):
-    "/home/westwell/car_plate_dataset/B/old/"
+
     train_image, val_image, test_image = objFileName(rootPath+'/B/')
 
     copy(train_image, rootPath+'/B/old/', rootPath+'/B/train/')
@@ -79,5 +65,4 @@ if __name__ == '__main__':
     if args.path is not None:
         copy_img(args.path)
     else:
-        rootPath = "/home/westwell/car_plate_dataset"
-        copy_img(rootPath)
+        print("please enter the dataset path")
