@@ -17,6 +17,16 @@
 
 **License plate detection** is a general task for most autonomous driving and computer vision comopanies. To train a license plate detector with high performance, we had to feed as many pictures into the model as possible. However, collecting real license plates will cost much resources and may infridge on strangers' privacy. One solution is to generate license plate with simple python script, just like what we provided in `genPlate.py`(Easy work, just random combinations of Characters and Digits). The problem followed by this solution is that the generated plates are all of high quality. We all know that training model with high quality images may cause your model degrade in the real world scene. Of course that you could add Gaussian noise and make some transformations on these images to lower the resolution of images delibrately. But, we could not guarantee that the generated images will have the same distribution with real world images. When talking about `distribution`, we could not ignore GAN. So here **GAN** comes to the rescue.
 
+<p align="center">
+  <img width="778" height="310" src="images/panda.jpg"/>
+</p>
+<p align="center">A demonstration of fast adversarial example generation applied to GoogLeNet (Szegedy
+et al., 2014a) on ImageNet. By adding an imperceptibly small vector whose elements are equal to
+the sign of the elements of the gradient of the cost function with respect to the input, we can change
+GoogLeNet’s classification of the image.
+</p>
+
+
 ## Preparation
 Prepare real-world licence plate dataset and put them in path ./data/B, since we gonna use pix2pix model and we need to extract the outlines of your plate images, the scripts are provided in `./scripts/extractOutline.py`
 
